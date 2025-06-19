@@ -24,8 +24,8 @@ const resetgame = () => {
 boxes.forEach((box) =>{
     box.addEventListener("click",() => {
         if(turnO){
-            box.innerText = "O";
             box.style.color = "red";
+            box.innerText = "O";
             turnO = false;
         } else{
             box.style.color = "blue";
