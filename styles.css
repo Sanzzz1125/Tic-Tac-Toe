@@ -6,7 +6,6 @@
 body{
     background-color: #d2f8d2;
     text-align: center;
-    
 }
 
 .title{
@@ -38,6 +37,7 @@ body{
     box-shadow: 0 0 1rem rgba(0,0,0,0.1);
     font-size: 3.5rem;
     background-color: #fef9c3;
+    color: #b0413e;
     transition: transform 0.2s;
 }
 
