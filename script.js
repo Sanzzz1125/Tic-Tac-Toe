@@ -39,7 +39,10 @@
             console.log(count);
             if(count == 9){
                 winnerMsg.innerText = "Draw";
+                box.disabled = true;
+                winnerMsg.classList.remove("hide");
             } else {
+                count = 0;
                 box.disabled = true;
                 checkWinner();   
             }
