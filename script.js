@@ -88,11 +88,6 @@
             newGameBtn.classList.remove("hide");
             winnerMsg.classList.remove("hide");
         }
-        
-        
-        winnerMsg.innerText = `Winner is ${winner}`;
-        newGameBtn.classList.remove("hide");
-        winnerMsg.classList.remove("hide");
     }
     newGameBtn.addEventListener("click", () => {
         resetgame();
