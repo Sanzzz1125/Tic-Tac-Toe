@@ -29,22 +29,20 @@
                 box.innerText = "O";
                 box.style.color = "red";
                 turnO = false;
-                count++;
             } else{
                 box.innerText = "X";
                 box.style.color = "blue";
                 turnO = true;
-                count++;
             }
-            console.log(count);
-            if(count == 9){
+            count++;
+            box.disabled = true;
+            checkWinner();
+
+            if(count === 9){
                 winnerMsg.innerText = "Draw";
-                box.disabled = true;
                 winnerMsg.classList.remove("hide");
-            } else {
-                count = 0;
-                box.disabled = true;
-                checkWinner();   
+                disableBoxes();
+                count=0;
             }
         });
     });
@@ -80,14 +78,9 @@
     };
 
     const showWinner = (winner) => {
-        if(count == 9){
-            winnerMsg.innerText = "Draw";
-        } else{
-            count = 0;
             winnerMsg.innerText = `Winner is ${winner}`;
             newGameBtn.classList.remove("hide");
             winnerMsg.classList.remove("hide");
-        }
     }
     newGameBtn.addEventListener("click", () => {
         resetgame();
