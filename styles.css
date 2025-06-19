@@ -38,7 +38,6 @@ body{
     box-shadow: 0 0 1rem rgba(0,0,0,0.1);
     font-size: 3.5rem;
     background-color: #fef9c3;
-    color: #2563eb;
     transition: transform 0.2s;
 }
 
